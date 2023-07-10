@@ -1,0 +1,140 @@
+*{
+    padding: 0;
+}
+body{
+    font-family: 'Rubik', sans-serif;
+    margin: 20px;
+    padding: 20px;
+    background-color: hsl(226, 43%, 10%);
+}
+.master{
+    padding: 20px;
+    color: hsl(236, 100%, 87%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+}
+.main{
+    margin: 20px;
+    padding: 10px;
+    display: grid;
+    width: 70%;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-areas: "one two three four" "one five six seven";
+    gap: 3vh;
+}
+.one{
+    grid-area: one;
+    color: hsl(236, 100%, 87%);
+    background-color: hsl(235, 46%, 20%);
+    border-radius: 2vh;
+}
+.one .one1 img{
+    height: 10vh;
+    width: 10vh;
+    border-radius: 50%;
+}
+.one1{
+    padding: 10%;
+    background-color: hsl(246, 80%, 60%);
+    border-radius: 2vh;
+    height: 60%;
+
+}
+.one2{
+    list-style: none;
+    padding: 10%;
+    /* height: 30%; */
+}
+.one ul{
+    list-style: none;
+}
+.two{
+    grid-area: two;
+    background-color: hsl(15, 100%, 70%);
+    border-radius: 10%;
+}
+.two1,.three1,  .four1, .five1, .six1, .seven1{
+    display: flex;
+    justify-content: end;
+    height: 20%;
+}
+.eclipse{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    margin-right: 3vh;
+}
+.two2, .three2, .four2, .five2, .six2, .seven2{
+    border-radius: 10%;
+    background-color: hsl(235, 46%, 20%);
+    padding-left: 2vh;
+    padding-top: 2vh;
+    height: 75%;
+}
+.three{
+    grid-area: three;
+    background-color: hsl(195, 74%, 62%);
+    border-radius: 10%;
+}
+.four{
+    grid-area: four;
+    background-color: hsl(348, 100%, 68%);
+    border-radius: 10%;
+}
+.five{
+    grid-area: five;
+    background-color: hsl(145, 58%, 55%);
+    border-radius: 10%;
+}
+.six{
+    grid-area: six;
+    background-color: hsl(264, 64%, 52%);
+    border-radius: 10%;
+}
+.seven{
+    grid-area: seven;
+    background-color: hsl(43, 84%, 65%);
+    border-radius: 10%;
+}
+
+@media screen and (max-width: 900px){
+    .main{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+    }
+    .one>div{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+        /* flex-direction: column; */
+        gap: 2vh;
+    }
+    .one2{
+        display: flex;
+        /* flex-direction: column; */
+        /* justify-content: space-between;  */
+        align-items: center;
+    }
+    .two1,.three1,  .four1, .five1, .six1, .seven1{
+        display: flex;
+        justify-content: end;
+        height: 10%;
+    }
+    .two2, .three2, .four2, .five2, .six2, .seven2{
+        border-radius: 10%;
+        background-color: hsl(235, 46%, 20%);
+        padding-left: 2vh;
+        padding-top: 2vh;
+        height: 100%;
+    }
+}
+
+
