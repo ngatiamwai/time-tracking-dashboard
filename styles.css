@@ -3,8 +3,8 @@
 }
 body{
     font-family: 'Rubik', sans-serif;
-    margin: 20px;
-    padding: 20px;
+    /* margin: 15px; */
+    /* padding: 10px; */
     background-color: hsl(226, 43%, 10%);
 }
 .master{
@@ -46,7 +46,13 @@ body{
 .one2{
     list-style: none;
     padding: 10%;
-    /* height: 30%; */
+    color: hsl(235, 45%, 61%);
+    
+}
+.one2 ul li:hover{
+    cursor: pointer;
+    color: hsl(236, 100%, 87%);
+    /* color: rgb(131, 21, 105); */
 }
 .one ul{
     list-style: none;
